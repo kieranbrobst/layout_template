@@ -1,6 +1,28 @@
 nav {
     height: 10vh;
     background: blue;
+    position: relative;
+}
+/*/NOTE: top & transform to make vertically centered by x,y /*/
+.nav-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0%, -50%);
+}
+
+.nav-links li {
+    display: inline;
+}
+/*/ All links in the nave list but not the last link by the :not(:last-child) sudo-selector /*/
+.nav-links li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-links li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 main {
